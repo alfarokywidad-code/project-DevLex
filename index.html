@@ -1,0 +1,324 @@
+<!Doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="DevLex connects digital law with the real work of building software, products and businesses.">
+  <title>DevLex — Digital Law for Builders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="announcement" id="announcement">
+    <span data-i18n="announcement" class="YY">Built for developers. Grounded in law. Designed for safer products.</span>
+    <button class="announcement-close" id="closeAnnouncement" aria-label="Close announcement">×</button>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="DevLex home"><span class="devlex-mark" aria-hidden="true"><svg
+          viewBox="0 0 48 48">
+          <path class="mark-shell" d="M8 5h17c11 0 18 7 18 19S36 43 25 43H8z" />
+          <path class="mark-cut" d="M18 14h7c6 0 10 4 10 10s-4 10-10 10h-7z" />
+          <path class="mark-line" d="M5 11v26M27 6l-7 12 9 6-9 7 7 11" />
+        </svg></span><span class="brand-word">Dev<span>Lex</span><i>.</i></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#library" data-i18n="navLibrary">Law library</a>
+      <a href="index.html#workflow" data-i18n="navWorkflow">How it works</a>
+      <a href="index.html#pricing" data-i18n="navPricing">Plans</a>
+      <a href="index.html#about" data-i18n="navAbout">About</a>
+      <a href="contact.html" data-i18n="navContact">Contact</a>
+      <button class="language-switch" id="languageSwitch" type="button" aria-label="Switch language">العربية</button>
+      <a class="button button-small" href="#pricing" data-i18n="navStart">Explore access ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span><span data-i18n="heroEyebrow">LEGAL INTELLIGENCE FOR THE DIGITAL
+            WORLD</span></div>
+        <h1 data-i18n="heroTitle" class="YY">Ship better code.<br><span>Understand the law.</span></h1>
+        <p class="hero-description" data-i18n="heroText">A practical, developer-first library for digital legislation,
+          technical obligations, and compliance decisions — starting with Morocco.</p>
+        <div class="hero-actions">
+          <a class="button" href="#library" data-i18n="exploreLaws">Explore the law library <span>↗</span></a>
+          <a class="text-link" href="#workflow" data-i18n="seeHow">See how it works <span>↓</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack"><span>09</span><span>53</span><span>43</span></div>
+          <p><strong data-i18n="heroProofStrong">Made for builders</strong><br><span data-i18n="heroProofText">Legal
+              sources translated into product decisions.</span></p>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a digital law dashboard">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="code-window">
+          <div class="window-top">
+            <div class="window-dots"><i></i><i></i><i></i></div><span>compliance.config</span><span
+              class="window-status">● LIVE GUIDE</span>
+          </div>
+          <div class="code-content">
+            <div><span class="line-no">01</span><span class="code-key">const</span> <span
+                class="code-var">product</span> = {</div>
+            <div><span class="line-no">02</span>&nbsp;&nbsp;data: <span class="code-string">'personal'</span>,</div>
+            <div><span class="line-no">03</span>&nbsp;&nbsp;region: <span class="code-string">'MA'</span>,</div>
+            <div><span class="line-no">04</span>&nbsp;&nbsp;consent: <span class="code-bool">required</span>,</div>
+            <div><span class="line-no">05</span>&nbsp;&nbsp;security: <span class="code-bool">review</span></div>
+            <div><span class="line-no">06</span>};</div>
+          </div>
+          <div class="compliance-card"><span class="check-icon">✓</span>
+            <div><strong data-i18n="complianceCardTitle">Compliance checklist</strong>
+              <p data-i18n="complianceCardText">4 practical steps to review</p>
+            </div><span class="card-arrow">↗</span>
+          </div>
+        </div>
+        <div class="floating-tag tag-top"><span class="tag-icon">§</span><span data-i18n="tagLaw">Law, made
+            practical</span></div>
+        <div class="floating-tag tag-bottom"><span class="tag-icon tag-green">⌘</span><span
+            data-i18n="tagDev">Developer-first guides</span></div>
+      </div>
+      <div class="hero-bottom-line"><span data-i18n="heroBottom">A clearer path from legal text to product
+          decisions.</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="section-wrap trust-inner"><span data-i18n="trustTitle">EXPLORE TOPIC AREAS</span>
+        <div><span>01&nbsp; Data protection</span><span>02&nbsp; Cybersecurity</span><span>03&nbsp;
+            E-transactions</span><span>04&nbsp; AI governance</span></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-space" id="library">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow" data-i18n="libraryEyebrow">THE LAW LIBRARY</div>
+          <h2 data-i18n="libraryTitle">Find the rule.<br><span>Understand the impact.</span></h2>
+        </div>
+        <p data-i18n="libraryText">Search legal references and browse plain-language summaries designed around the
+          questions developers actually ask.</p>
+      </div>
+      <div class="library-toolbar">
+        <label class="search-box"><span>⌕</span><input id="lawSearch" type="search"
+            data-i18n-placeholder="searchPlaceholder" placeholder="Search laws, topics, or keywords..."
+            aria-label="Search laws"><kbd>⌘ K</kbd></label>
+        <select id="topicFilter" aria-label="Filter by topic">
+          <option value="all" data-i18n="allTopics">All topics</option>
+          <option value="data" data-i18n="topicData">Data protection</option>
+          <option value="cyber" data-i18n="topicCyber">Cybersecurity</option>
+          <option value="transactions" data-i18n="topicTransactions">E-transactions</option>
+          <option value="access" data-i18n="topicAccess">Transparency & access</option>
+        </select>
+      </div>
+      <div class="law-grid" id="lawGrid" aria-live="polite"></div>
+      <div class="library-foot"><span id="resultCount">6 references</span><span data-i18n="libraryFoot">Reference cards
+          are educational summaries, not legal advice.</span></div>
+    </section>
+
+    <section class="workflow-section" id="workflow">
+      <div class="section-wrap section-space">
+        <div class="section-heading light-heading">
+          <div>
+            <div class="eyebrow" data-i18n="workflowEyebrow">FROM LAW TO LAUNCH</div>
+            <h2 data-i18n="workflowTitle">Less legal guesswork.<br><span>More confident building.</span></h2>
+          </div>
+          <p data-i18n="workflowText">Move from a legal question to a practical next step without losing sight of the
+            source text.</p>
+        </div>
+        <div class="workflow-grid">
+          <article class="workflow-step"><span class="step-number">01</span>
+            <div class="step-symbol">⌕</div>
+            <h3 data-i18n="step1Title">Find the source</h3>
+            <p data-i18n="step1Text">Browse legislation by topic, technology, or the problem you are solving.</p><span
+              class="step-foot">SEARCH / DISCOVER</span>
+          </article>
+          <article class="workflow-step"><span class="step-number">02</span>
+            <div class="step-symbol">§</div>
+            <h3 data-i18n="step2Title">Understand the rule</h3>
+            <p data-i18n="step2Text">Read a plain-language overview, key terms, and the official source to verify.</p>
+            <span class="step-foot">LEARN / VERIFY</span>
+          </article>
+          <article class="workflow-step"><span class="step-number">03</span>
+            <div class="step-symbol">✓</div>
+            <h3 data-i18n="step3Title">Apply it to your product</h3>
+            <p data-i18n="step3Text">Use checklists to spot questions for your design, data flows, and release process.
+            </p><span class="step-foot">PLAN / REVIEW</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-space" id="benefits">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow" data-i18n="benefitsEyebrow">WHY DEVLEX</div>
+          <h2 data-i18n="benefitsTitle">Legal knowledge that<br><span>fits your workflow.</span></h2>
+        </div>
+        <p data-i18n="benefitsText">Built to make digital regulation more accessible to software teams — not to replace
+          qualified legal counsel.</p>
+      </div>
+      <div class="benefit-grid">
+        <article class="benefit-card"><span class="benefit-icon">⌘</span>
+          <h3 data-i18n="benefit1Title">Made for developers</h3>
+          <p data-i18n="benefit1Text">Explanations organized around APIs, user data, hosting, security, and product
+            decisions.</p>
+        </article>
+        <article class="benefit-card"><span class="benefit-icon">◎</span>
+          <h3 data-i18n="benefit2Title">Sources you can trace</h3>
+          <p data-i18n="benefit2Text">Every published guide should link to an official text, with its status and
+            last-reviewed date.</p>
+        </article>
+        <article class="benefit-card"><span class="benefit-icon">↗</span>
+          <h3 data-i18n="benefit3Title">Built for two languages</h3>
+          <p data-i18n="benefit3Text">Switch between Arabic and English while keeping technical terms clear and
+            consistent.</p>
+        </article>
+        <article class="benefit-card"><span class="benefit-icon">✓</span>
+          <h3 data-i18n="benefit4Title">Practical, not overwhelming</h3>
+          <p data-i18n="benefit4Text">Checklists and implementation questions help teams decide what to investigate
+            next.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+      <div class="section-wrap section-space">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow" data-i18n="pricingEyebrow">ACCESS THAT SCALES</div>
+            <h2 data-i18n="pricingTitle">Start free.<br><span>Go deeper when ready.</span></h2>
+          </div>
+          <p data-i18n="pricingText">A proposed pricing model for the first version. Prices and features can be adjusted
+            after user research.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <div class="plan-label" data-i18n="freePlan">STARTER</div>
+            <h3 data-i18n="freeTitle">Explorer</h3>
+            <p data-i18n="freeDescription">For developers discovering digital law.</p>
+            <div class="price">0 <small>MAD / <span data-i18n="forever">forever</span></small></div>
+            <ul>
+              <li data-i18n="freeFeature1">Browse public law cards</li>
+              <li data-i18n="freeFeature2">Read selected summaries</li>
+              <li data-i18n="freeFeature3">Use topic search</li>
+            </ul><a href="#library" class="button button-outline full-button" data-i18n="freeButton">Explore free
+              library</a>
+          </article>
+          <article class="price-card price-featured">
+            <div class="popular-badge" data-i18n="popular">MOST VALUE</div>
+            <div class="plan-label" data-i18n="proPlan">PRO</div>
+            <h3 data-i18n="proTitle">Builder</h3>
+            <p data-i18n="proDescription">For teams who want a structured workflow.</p>
+            <div class="price">199 <small>MAD / <span data-i18n="perMonth">month</span></small></div>
+            <ul>
+              <li data-i18n="proFeature1">Detailed practical guides</li>
+              <li data-i18n="proFeature2">Downloadable compliance checklists</li>
+              <li data-i18n="proFeature3">Saved reading lists</li>
+              <li data-i18n="proFeature4">Update alerts (planned)</li>
+            </ul><button class="button full-button" id="subscribeButton" data-i18n="subscribe">Choose Builder
+              <span>↗</span></button>
+            <p class="price-note" data-i18n="paymentNote">Demo only: payment is not processed on this page.</p>
+          </article>
+          <article class="price-card">
+            <div class="plan-label" data-i18n="teamPlan">TEAM</div>
+            <h3 data-i18n="teamTitle">Studio</h3>
+            <p data-i18n="teamDescription">For startups, agencies, and product teams.</p>
+            <div class="price" data-i18n="contactPrice">Custom</div>
+            <ul>
+              <li data-i18n="teamFeature1">Team workspace (planned)</li>
+              <li data-i18n="teamFeature2">Internal review templates</li>
+              <li data-i18n="teamFeature3">Training and onboarding</li>
+            </ul><a class="button button-outline full-button" href="contact.html" data-i18n="talkToUs">Talk to us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="section-wrap about-layout">
+        <div class="about-mark" aria-label="DevLex">D<span>.</span></div>
+        <div class="about-copy">
+          <div class="eyebrow" data-i18n="aboutEyebrow">ABOUT THE PROJECT</div>
+          <h2 data-i18n="aboutTitle">Digital law should be<br><span>part of product thinking.</span></h2>
+          <p data-i18n="aboutText">DevLex is a legal-tech concept designed to connect digital legislation with the
+            day-to-day decisions of developers, founders, and product teams. It aims to make legal sources easier to
+            discover and their technical implications easier to discuss.</p>
+          <div class="about-callout"><span>✳</span>
+            <p data-i18n="aboutCallout">Our promise: clearer explanations, traceable sources, and practical questions —
+              never a promise of automatic legal compliance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="section-wrap final-cta-inner">
+        <div>
+          <div class="eyebrow" data-i18n="ctaEyebrow">BUILD WITH CLARITY</div>
+          <h2 data-i18n="ctaTitle">Your product is digital.<br>Its legal foundations should be, too.</h2>
+        </div><a class="button button-light" href="index.html#library" data-i18n="ctaButton">Explore the library ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-wrap footer-main"><a class="brand footer-brand" href="index.html#home"><span class="devlex-mark"
+          aria-hidden="true"><svg viewBox="0 0 48 48">
+            <path class="mark-shell" d="M8 5h17c11 0 18 7 18 19S36 43 25 43H8z" />
+            <path class="mark-cut" d="M18 14h7c6 0 10 4 10 10s-4 10-10 10h-7z" />
+            <path class="mark-line" d="M5 11v26M27 6l-7 12 9 6-9 7 7 11" />
+          </svg></span><span class="brand-word">Dev<span>Lex</span><i>.</i></span></a>
+      <p data-i18n="footerDescription">Digital law, translated for people who build technology.</p>
+      <div class="footer-links"><a href="index.html#library" data-i18n="navLibrary">Law library</a><a
+          href="index.html#about" data-i18n="navAbout">About</a><a href="contact.html"
+          data-i18n="navContact">Contact</a><a href="index.html#pricing" data-i18n="navPricing">Plans</a></div>
+    </div>
+    <div class="section-wrap footer-bottom"><span>© <span id="year"></span> DevLex. <span data-i18n="rights">All rights
+          reserved.</span></span><span data-i18n="disclaimer">Educational information only — not legal advice. Verify
+        the official text and current status.</span></div>
+  </footer>
+
+  <div class="modal-backdrop" id="lawModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card"><button class="modal-close" id="closeLawModal" aria-label="Close">×</button>
+      <div class="eyebrow" id="modalCategory">LEGAL REFERENCE</div>
+      <h2 id="modalTitle"></h2>
+      <p class="modal-law-number" id="modalNumber"></p>
+      <p id="modalSummary"></p>
+      <h3 data-i18n="developerQuestions">Questions for your product</h3>
+      <ul id="modalQuestions"></ul>
+      <div class="modal-source"><strong data-i18n="sourceReminder">Source reminder</strong>
+        <p data-i18n="sourceReminderText">Confirm the latest consolidated text, amendments, implementing decrees, and
+          official publication before relying on this reference.</p><a id="modalSourceLink" href="#" target="_blank"
+          rel="noopener noreferrer" data-i18n="officialSource">Search official source ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="paymentModal" role="dialog" aria-modal="true" aria-labelledby="paymentTitle" hidden>
+    <div class="modal-card payment-modal"><button class="modal-close" id="closePaymentModal"
+        aria-label="Close">×</button>
+      <div class="eyebrow" data-i18n="checkoutEyebrow">SECURE CHECKOUT — DEMO</div>
+      <h2 id="paymentTitle" data-i18n="checkoutTitle">Builder plan</h2>
+      <p data-i18n="checkoutText">This is a front-end prototype. No payment details are collected and no money will be
+        charged.</p>
+      <div class="checkout-summary"><span data-i18n="monthlyAccess">Monthly access</span><strong>199 MAD</strong></div>
+      <label class="demo-check"><input type="checkbox" id="acceptDemo"><span data-i18n="demoConsent">I understand this
+          is a demo and does not activate a subscription.</span></label><button class="button full-button"
+        id="confirmDemoPayment" data-i18n="continueDemo">Continue demo</button>
+      <p id="paymentFeedback" class="form-feedback" aria-live="polite"></p>
+      <p class="payment-provider-note" data-i18n="realPaymentNote">For real payments, connect a trusted provider
+        available in Morocco, configure server-side payment verification, receipts, cancellation, and refund terms.
+        Never handle card data in front-end JavaScript.</p>
+    </div>
+  </div>
+</body>
+
+</html>

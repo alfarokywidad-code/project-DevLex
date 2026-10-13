@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Contact DevLex about partnerships, digital law content, and developer compliance resources.">
+    <title>Contact DevLex — Digital Law for Builders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-page-main {
+            min-height: calc(100vh - 180px);
+            padding: 75px 0 90px;
+            position: relative;
+            overflow: hidden
+        }
+
+        .contact-page-main:before,
+        .contact-page-main:after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(2px);
+            z-index: -1
+        }
+
+        .contact-page-main:before {
+            width: 440px;
+            height: 440px;
+            top: -120px;
+            right: -100px;
+            background: radial-gradient(circle, rgba(255, 111, 207, .24), rgba(129, 87, 255, .08) 60%, transparent 70%)
+        }
+
+        .contact-page-main:after {
+            width: 400px;
+            height: 400px;
+            bottom: -180px;
+            left: -130px;
+            background: radial-gradient(circle, rgba(82, 229, 210, .25), transparent 68%)
+        }
+
+        .contact-hero {
+            max-width: 820px;
+            margin: 0 auto 42px
+        }
+
+        .contact-hero h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1.05;
+            letter-spacing: -3px;
+            margin: 20px 0
+        }
+
+        .contact-hero h1 span {
+            background: linear-gradient(100deg, #8157ff, #d14fba, #159c9c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent
+        }
+
+        .contact-hero>p {
+            max-width: 630px;
+            color: var(--muted);
+            line-height: 1.9
+        }
+
+        .contact-page-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 28px;
+            align-items: stretch
+        }
+
+        .contact-aside {
+            border-radius: 24px;
+            padding: 30px;
+            background: linear-gradient(150deg, #24134f, #54309a 58%, #166f78);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 420px;
+            overflow: hidden;
+            position: relative
+        }
+
+        .contact-aside:after {
+            content: "§";
+            font-size: 230px;
+            font-weight: 700;
+            line-height: 1;
+            position: absolute;
+            right: -8px;
+            bottom: -65px;
+            color: rgba(255, 255, 255, .07)
+        }
+
+        .contact-aside h2 {
+            font-size: 27px;
+            line-height: 1.25;
+            margin: 12px 0
+        }
+
+        .contact-aside p {
+            font-size: 13px;
+            line-height: 1.9;
+            color: #e2d9ff
+        }
+
+        .contact-aside .contact-info-item {
+            position: relative;
+            z-index: 1
+        }
+
+        .contact-aside .contact-info-item>span {
+            background: rgba(255, 255, 255, .13);
+            color: #d7ff4f
+        }
+
+        .contact-aside .contact-info-item small {
+            color: #d2c5fa
+        }
+
+        .contact-aside .contact-info-item p {
+            color: white;
+            overflow-wrap: anywhere
+        }
+
+        .contact-form {
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 24px 70px rgba(40, 19, 85, .1);
+            gap: 18px
+        }
+
+        .contact-form label {
+            font-size: 12px;
+            color: #43365f
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            background: #fdfbff;
+            border-color: #e3d9f2;
+            border-radius: 12px;
+            font-size: 13px;
+            padding: 14px
+        }
+
+        .contact-form input,
+        .contact-form select {
+            height: 49px
+        }
+
+        .contact-form textarea {
+            min-height: 130px
+        }
+
+        .contact-form .button {
+            align-self: stretch
+        }
+
+        .contact-back {
+            display: inline-flex;
+            margin-top: 26px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #7046db
+        }
+
+        .contact-back:hover {
+            color: #c14ba8
+        }
+
+        body[dir="rtl"] .contact-hero h1,
+        body[dir="rtl"] .contact-hero>p,
+        body[dir="rtl"] .contact-aside {
+            text-align: right
+        }
+
+        body[dir="rtl"] .contact-aside:after {
+            right: auto;
+            left: -8px
+        }
+
+        body[dir="rtl"] .contact-page-main:before {
+            right: auto;
+            left: -100px
+        }
+
+        @media(max-width:760px) {
+            .contact-page-main {
+                padding: 48px 0 65px
+            }
+
+            .contact-page-grid {
+                grid-template-columns: 1fr
+            }
+
+            .contact-aside {
+                min-height: 300px
+            }
+
+            .contact-form {
+                padding: 22px
+            }
+
+            .contact-hero h1 {
+                letter-spacing: -1.8px
+            }
+        }
+    </style>
+
+    <style>
+        /* Contact page follows the same cobalt / navy / coral identity as the home page */
+        .contact-page-main:before {
+            background: radial-gradient(circle, rgba(255, 112, 79, .18), rgba(36, 87, 255, .06) 60%, transparent 70%)
+        }
+
+        .contact-page-main:after {
+            background: radial-gradient(circle, rgba(36, 87, 255, .13), transparent 68%)
+        }
+
+        .contact-hero h1 span {
+            background: linear-gradient(100deg, #2457ff, #ff704f);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent
+        }
+
+        .contact-aside {
+            background: radial-gradient(ellipse at 90% 8%, rgba(255, 112, 79, .25), transparent 33%), linear-gradient(145deg, #111b32, #1d3470 75%, #2457ff)
+        }
+
+        .contact-aside .eyebrow {
+            color: #ffb19d !important
+        }
+
+        .contact-aside .contact-info-item>span {
+            background: rgba(255, 255, 255, .14);
+            color: #ffb19d
+        }
+
+        .contact-aside .contact-info-item small {
+            color: #d1dbee
+        }
+
+        .contact-back {
+            font-size: 15px;
+            color: #2457ff
+        }
+
+        .contact-back:hover {
+            color: #d94e31
+        }
+
+        .contact-hero h1 {
+            font-size: clamp(48px, 5.3vw, 70px);
+            line-height: 1.1;
+            letter-spacing: -3px
+        }
+
+        .contact-hero>p {
+            font-size: 18px
+        }
+
+        .contact-aside h2 {
+            font-size: 28px
+        }
+
+        .contact-aside p {
+            font-size: 16px;
+            line-height: 1.85
+        }
+
+        .contact-form label {
+            font-size: 15px;
+            color: #263652
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            font-size: 16px;
+            border-color: #dce3ef;
+            background: #fbfcff
+        }
+
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            border-color: #2457ff;
+            box-shadow: 0 0 0 3px rgba(36, 87, 255, .12)
+        }
+
+        @media(max-width:760px) {
+            .contact-hero h1 {
+                font-size: clamp(40px, 10vw, 52px);
+                letter-spacing: -1px
+            }
+
+            .contact-hero>p {
+                font-size: 16px
+            }
+
+            .contact-form label {
+                font-size: 14px
+            }
+
+            .contact-form input,
+            .contact-form select,
+            .contact-form textarea {
+                font-size: 16px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="announcement"><span id="contactAnnouncement">A good product deserves clear legal foundations.</span>
+    </div>
+    <header class="site-header"><a class="brand" href="index.html#home" aria-label="DevLex home"><span
+                class="devlex-mark" aria-hidden="true"><svg viewBox="0 0 48 48">
+                    <path class="mark-shell" d="M8 5h17c11 0 18 7 18 19S36 43 25 43H8z" />
+                    <path class="mark-cut" d="M18 14h7c6 0 10 4 10 10s-4 10-10 10h-7z" />
+                    <path class="mark-line" d="M5 11v26M27 6l-7 12 9 6-9 7 7 11" />
+                </svg></span><span class="brand-word">dev<span>lex</span><i>.</i></span></a><button class="menu-toggle"
+            id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav class="main-nav" id="mainNav"><a href="index.html#library" id="navLibrary">Law library</a><a
+                href="index.html#workflow" id="navWorkflow">How it works</a><a href="index.html#pricing"
+                id="navPricing">Plans</a><a href="index.html#about" id="navAbout">About</a><button
+                class="language-switch" id="languageSwitch" type="button">العربية</button><a class="button button-small"
+                href="index.html#pricing" id="navStart">Explore access ↗</a></nav>
+    </header>
+    <main class="contact-page-main">
+        <div class="section-wrap">
+            <div class="contact-hero">
+                <div class="eyebrow"><span class="pulse"></span><span id="contactEyebrow">LET'S BUILD SOMETHING
+                        USEFUL</span></div>
+                <h1 id="contactTitle">Tell us what you're <span>building next.</span></h1>
+                <p id="contactIntro">Partnership idea, product feedback, a legal topic you need explained, or a company
+                    looking for a clearer path through digital regulation? Start the conversation here.</p>
+            </div>
+            <div class="contact-page-grid">
+                <aside class="contact-aside">
+                    <div>
+                        <div class="eyebrow" style="color:#d7ff4f" id="asideEyebrow">FOR DEVELOPERS & TEAMS</div>
+                        <h2 id="asideTitle">The right question can shape a better tool.</h2>
+                        <p id="asideText">DevLex is being designed around the real questions that appear while building,
+                            launching, and scaling digital products.</p>
+                    </div>
+                    <div>
+                        <div class="contact-info-item"><span>✉</span>
+                            <div><small id="emailLabel">PROJECT EMAIL</small>
+                                <p>hello@devlex.example</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item"><span>⌘</span>
+                            <div><small id="focusLabel">CURRENT FOCUS</small>
+                                <p id="focusText">Digital law · Developer compliance · Arabic & English</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row"><label><span id="nameLabel">Your name</span><input id="contactName"
+                                name="name" required placeholder="e.g. Sara Ahmed"></label><label><span
+                                id="emailFieldLabel">Work email</span><input id="contactEmail" name="email" type="email"
+                                required placeholder="you@company.com"></label></div><label><span id="subjectLabel">What
+                            would you like to discuss?</span><select id="contactSubject" name="subject" required>
+                            <option value="" id="selectSubject">Choose a topic</option>
+                            <option value="partnership" id="subjectPartnership">Partnership or company plan</option>
+                            <option value="product" id="subjectFeedback">Product feedback</option>
+                            <option value="law" id="subjectLaw">Suggest a law or guide</option>
+                            <option value="team" id="subjectTeam">Team / enterprise access</option>
+                            <option value="other" id="subjectOther">Something else</option>
+                        </select></label><label><span id="messageLabel">Your message</span><textarea id="contactMessage"
+                            name="message" required placeholder="Tell us what you need..."></textarea></label><button
+                        class="button" type="submit" id="sendMessage">Prepare email <span>↗</span></button>
+                    <p class="form-feedback" id="contactFeedback" aria-live="polite"></p><small id="privacyNote"
+                        style="color:var(--muted);line-height:1.7">Prototype note: this form prepares an email in your
+                        email app; it does not send data to a server.</small>
+                </form>
+            </div><a class="contact-back" href="index.html" id="backHome">← Back to DevLex home</a>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="section-wrap footer-main"><a class="brand footer-brand" href="index.html#home"><span
+                    class="devlex-mark" aria-hidden="true"><svg viewBox="0 0 48 48">
+                        <path class="mark-shell" d="M8 5h17c11 0 18 7 18 19S36 43 25 43H8z" />
+                        <path class="mark-cut" d="M18 14h7c6 0 10 4 10 10s-4 10-10 10h-7z" />
+                        <path class="mark-line" d="M5 11v26M27 6l-7 12 9 6-9 7 7 11" />
+                    </svg></span><span class="brand-word">dev<span>lex</span><i>.</i></span></a>
+            <p id="footerDescription">Digital law, translated for people who build technology.</p>
+            <div class="footer-links"><a href="index.html#library" id="footerLibrary">Law library</a><a
+                    href="index.html#about" id="footerAbout">About</a><a href="index.html#pricing"
+                    id="footerPricing">Plans</a></div>
+        </div>
+        <div class="section-wrap footer-bottom"><span>© <span id="year"></span> DevLex. <span id="rights">All rights
+                    reserved.</span></span><span id="disclaimer">Educational information only — not legal advice. Verify
+                the official text and current status.</span></div>
+    </footer>
+    <script>
+        const copy = { en: { announcement: 'A good product deserves clear legal foundations.', navLibrary: 'Law library', navWorkflow: 'How it works', navPricing: 'Plans', navAbout: 'About', navStart: 'Explore access ↗', eyebrow: "LET'S BUILD SOMETHING USEFUL", title: 'Tell us what you\'re <span>building next.</span>', intro: 'Partnership idea, product feedback, a legal topic you need explained, or a company looking for a clearer path through digital regulation? Start the conversation here.', asideEyebrow: 'FOR DEVELOPERS & TEAMS', asideTitle: 'The right question can shape a better tool.', asideText: 'DevLex is being designed around the real questions that appear while building, launching, and scaling digital products.', emailLabel: 'PROJECT EMAIL', focusLabel: 'CURRENT FOCUS', focusText: 'Digital law · Developer compliance · Arabic & English', nameLabel: 'Your name', emailFieldLabel: 'Work email', subjectLabel: 'What would you like to discuss?', selectSubject: 'Choose a topic', subjectPartnership: 'Partnership or company plan', subjectFeedback: 'Product feedback', subjectLaw: 'Suggest a law or guide', subjectTeam: 'Team / enterprise access', subjectOther: 'Something else', messageLabel: 'Your message', sendMessage: 'Prepare email ↗', privacyNote: 'Prototype note: this form prepares an email in your email app; it does not send data to a server.', backHome: '← Back to DevLex home', footerDescription: 'Digital law, translated for people who build technology.', footerLibrary: 'Law library', footerAbout: 'About', footerPricing: 'Plans', rights: 'All rights reserved.', disclaimer: 'Educational information only — not legal advice. Verify the official text and current status.', success: 'Your email draft is ready. If your email app does not open, copy your message and send it manually.', invalid: 'Please complete all fields with a valid email address.', placeholderName: 'e.g. Sara Ahmed', placeholderEmail: 'you@company.com', placeholderMessage: 'Tell us what you need...' }, ar: { announcement: 'كل منتج جيد يستحق أسسًا قانونية واضحة.', navLibrary: 'مكتبة القوانين', navWorkflow: 'كيف تعمل المنصة', navPricing: 'الباقات', navAbout: 'عن المنصة', navStart: 'استكشف الاشتراك ↗', eyebrow: 'لنبنِ شيئًا مفيدًا معًا', title: 'أخبرنا عمّا <span>تعمل على بنائه.</span>', intro: 'هل لديك فكرة شراكة، أو ملاحظات حول المنصة، أو موضوع قانوني تريد شرحه، أو شركة تبحث عن فهم أوضح للتنظيم الرقمي؟ ابدأ التواصل من هنا.', asideEyebrow: 'للمطورين والفرق', asideTitle: 'السؤال الصحيح قد يصنع أداة أفضل.', asideText: 'يجري تصميم DevLex انطلاقًا من الأسئلة الحقيقية التي تظهر عند تطوير المنتجات الرقمية وإطلاقها وتوسيعها.', emailLabel: 'بريد المشروع', focusLabel: 'مجالات التركيز', focusText: 'القانون الرقمي · امتثال المطورين · العربية والإنجليزية', nameLabel: 'الاسم الكامل', emailFieldLabel: 'البريد الإلكتروني المهني', subjectLabel: 'ما الموضوع الذي تريد مناقشته؟', selectSubject: 'اختر موضوعًا', subjectPartnership: 'شراكة أو باقة للشركات', subjectFeedback: 'ملاحظات حول المنصة', subjectLaw: 'اقتراح قانون أو دليل', subjectTeam: 'اشتراك الفرق والشركات', subjectOther: 'موضوع آخر', messageLabel: 'رسالتك', sendMessage: 'إعداد البريد ↗', privacyNote: 'تنبيه: هذه نسخة تجريبية تجهز رسالة في تطبيق البريد ولا ترسل البيانات إلى خادم.', backHome: '← العودة إلى الصفحة الرئيسية', footerDescription: 'القانون الرقمي بلغة يفهمها من يبنون التكنولوجيا.', footerLibrary: 'مكتبة القوانين', footerAbout: 'عن المنصة', footerPricing: 'الباقات', rights: 'جميع الحقوق محفوظة.', disclaimer: 'معلومات تعليمية وليست استشارة قانونية. تحقق من النص الرسمي ووضعه الحالي.', success: 'تم إعداد مسودة البريد. إذا لم يفتح تطبيق البريد، انسخ رسالتك وأرسلها يدويًا.', invalid: 'يرجى ملء جميع الحقول وإدخال بريد إلكتروني صحيح.', placeholderName: 'مثال: سارة أحمد', placeholderEmail: 'you@company.com', placeholderMessage: 'أخبرنا بما تحتاج إليه...' } }; let lang = 'en'; const set = (id, key) => { const el = document.getElementById(id); if (el) el.innerHTML = copy[lang][key] }; function applyLanguage() { document.documentElement.lang = lang; document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'; Object.keys({ announcement: 'announcement', navLibrary: 'navLibrary', navWorkflow: 'navWorkflow', navPricing: 'navPricing', navAbout: 'navAbout', navStart: 'navStart', contactEyebrow: 'eyebrow', contactTitle: 'title', contactIntro: 'intro', asideEyebrow: 'asideEyebrow', asideTitle: 'asideTitle', asideText: 'asideText', emailLabel: 'emailLabel', focusLabel: 'focusLabel', focusText: 'focusText', nameLabel: 'nameLabel', emailFieldLabel: 'emailFieldLabel', subjectLabel: 'subjectLabel', selectSubject: 'selectSubject', subjectPartnership: 'subjectPartnership', subjectFeedback: 'subjectFeedback', subjectLaw: 'subjectLaw', subjectTeam: 'subjectTeam', subjectOther: 'subjectOther', messageLabel: 'messageLabel', sendMessage: 'sendMessage', privacyNote: 'privacyNote', backHome: 'backHome', footerDescription: 'footerDescription', footerLibrary: 'footerLibrary', footerAbout: 'footerAbout', footerPricing: 'footerPricing', rights: 'rights', disclaimer: 'disclaimer' }).forEach(id => set(id, ({ contactEyebrow: 'eyebrow', contactTitle: 'title', contactIntro: 'intro' }[id] || id))); document.getElementById('contactName').placeholder = copy[lang].placeholderName; document.getElementById('contactEmail').placeholder = copy[lang].placeholderEmail; document.getElementById('contactMessage').placeholder = copy[lang].placeholderMessage; document.getElementById('languageSwitch').textContent = lang === 'en' ? 'العربية' : 'English' } document.getElementById('languageSwitch').addEventListener('click', () => { lang = lang === 'en' ? 'ar' : 'en'; applyLanguage() }); document.getElementById('menuToggle').addEventListener('click', () => { const n = document.getElementById('mainNav'); const open = n.classList.toggle('open'); document.getElementById('menuToggle').setAttribute('aria-expanded', String(open)); document.getElementById('menuToggle').textContent = open ? '×' : '☰' }); document.getElementById('contactForm').addEventListener('submit', e => { e.preventDefault(); const name = document.getElementById('contactName').value.trim(), email = document.getElementById('contactEmail').value.trim(), subject = document.getElementById('contactSubject').value, message = document.getElementById('contactMessage').value.trim(); if (!name || !email || !subject || !message || !document.getElementById('contactEmail').checkValidity()) { document.getElementById('contactFeedback').textContent = copy[lang].invalid; return } document.getElementById('contactFeedback').textContent = copy[lang].success; const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nTopic: ' + subject + '\n\n' + message); window.location.href = 'mailto:hello@devlex.example?subject=' + encodeURIComponent('DevLex contact — ' + subject) + '&body=' + body }); document.getElementById('year').textContent = new Date().getFullYear(); applyLanguage();
+    </script>
+</body>
+
+</html>
